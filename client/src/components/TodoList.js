@@ -13,8 +13,6 @@ const TodoList = ({ todos, updateTodo, deleteTodo }) => (
       )
     }
   </div>
-
-  
 )
 
 export default TodoList;

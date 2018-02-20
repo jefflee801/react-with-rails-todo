@@ -23,6 +23,11 @@ class Api::ItemsController < ApplicationController
     render json: { message: 'Item deleted' }
   end
 
+  def edit
+    Item.find(params[:id]).edit
+    render json: { message: 'Edit item' }
+  end
+
   private
 
   def item_params

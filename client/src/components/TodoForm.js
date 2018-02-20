@@ -23,37 +23,12 @@ class TodoForm extends React.Component {
           required
           value={this.state.name}
           onChange={this.handleChange}
-
         />
-        <table>
-
-            <tbody>
-            <li>{}</li>
-              <button>Delete</button>
-
-              <button>Completed</button>
-
-            </tbody>
-
-        </table>
 
       </form>
     )
   }
 
-  // render() {
-  //   return (
-  //     <table className="highlight">
-  //       <tbody>
-  //         <tr>
-  //           <td>Alvin</td>
-  //           <td>Eclair</td>
-  //           <td>$0.87</td>
-  //         </tr>
-  //
-  //     </table>
-  //   )
-  // }
 
 }
 

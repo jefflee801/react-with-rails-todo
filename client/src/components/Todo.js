@@ -16,7 +16,7 @@ const Todo = ({ id, complete, name, updateTodo, deleteTodo }) => (
         defaultChecked={complete}
         onClick={() => updateTodo(id)}
       />
-      <label htmlFor={`item-${id}`}>Complete?</label>
+      <label htmlFor={`item-${id}`}>Completed</label>
     </div>
     <div style={ styles.pointer } className="col m1" onClick={() => deleteTodo(id)}>
       X

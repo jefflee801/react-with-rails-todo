@@ -10,7 +10,6 @@ class App extends Component {
     fetch('/api/items')
       .then( res => res.json() )
       .then( todos => this.setState({ todos }) )
-    //TODO make a call to our rails server to get Items
   }
 
   addItem = (name) => {
@@ -42,6 +41,7 @@ class App extends Component {
       this.setState({ todos });
     })
   }
+  
 
   deleteTodo = (id) => {
     fetch(`/api/items/${id}`, { method: 'DELETE' })
@@ -55,8 +55,8 @@ class App extends Component {
     return (
 
       <div className="container">
-        <TodoForm addItem={this.addItem}
-        TodoList
+        <TodoForm addItem={this.addItem} />
+        <TodoList
           todos={this.state.todos}
           updateTodo={this.updateTodo}
           deleteTodo={this.deleteTodo}
